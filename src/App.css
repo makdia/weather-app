@@ -1,38 +1,120 @@
-.App {
+/* Base Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Background */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* App Container */
+.app {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffffdd;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Title */
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Search Form */
+.search-form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  margin-bottom: 1.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.search-form input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.search-form button {
+  padding: 0.5rem 1rem;
+  background-color: #4fc3f7;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+  background-color: #0288d1;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Weather Info Section */
+.weather-info {
+  margin-top: 1rem;
+}
+
+.weather-info h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.weather-info img {
+  width: 100px;
+  margin: 1rem 0;
+}
+
+.weather-info .temp {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.weather-info p {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+
+.weather-info .details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .app {
+    padding: 1.5rem;
+    border-radius: 15px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-form button {
+    width: 100%;
   }
 }
