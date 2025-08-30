@@ -18,7 +18,7 @@ A modern and responsive **React Weather App** that displays the current weather 
 
 ## Demo Screenshot
 
-![Weather App Demo](screenshot.png)  
+![Weather App Demo](https://raw.githubusercontent.com/makdia/weather-app/refs/heads/main/public/screenshot.png)  
 
 ---
 
@@ -26,5 +26,5 @@ A modern and responsive **React Weather App** that displays the current weather 
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/makdia/weather-app.git
 cd weather-app

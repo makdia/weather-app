@@ -8,7 +8,7 @@ const App = () => {
   const [cityInput, setCityInput] = useState("");
   const [error, setError] = useState(null);
 
-  const API_KEY = "YOUR_API_KEY"; // Replace with your actual API key
+  const API_KEY = "025c0f99f06c0e55373206b912cb4e60"; // Replace with your actual API key
 
   useEffect(() => {
     if (navigator.geolocation) {
